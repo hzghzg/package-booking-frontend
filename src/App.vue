@@ -1,14 +1,31 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
     <router-view/>
+    <!-- <main-page></main-page>
+    <save-package id="save"></save-package>
+    <reservation id="res"></reservation> -->
   </div>
 </template>
+<script>
+// import MainPage from './components/MainPage.vue'
+// // import Home from './components/Home.vue'
+// import SavePackage from './components/SavePackage.vue'
+// import Reservation from './components/Reservation.vue'
+export default {
+  name: 'app',
+  components: {
+    // Reservation,
+    // SavePackage,
+    // MainPage
+  }
+}
+</script>
 
 <style lang="scss">
+#save{
+  margin-top:10px;
+  margin-bottom:10px;
+}
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
